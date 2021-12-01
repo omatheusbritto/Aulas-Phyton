@@ -30,7 +30,7 @@ print(f'Cod | Nome do produto | Valor unitario |   Qtd | Valor total|')
 aux = len(nomeproduto)
 for c in range (aux):
     valortotalproduto.append(quantidadeproduto[c] * precoproduto[c])
-    print(f'{c+1:^2}  | {nomeproduto[c]:^15} | {precoproduto[c]:^15.2f}| {quantidadeproduto[c]:^5.0f} | R${valortotalproduto[c]:^9.2f}|')
+    print(f'{c+1:^2}  | {nomeproduto[c]:^15} | R${precoproduto[c]:^12.2f}| {quantidadeproduto[c]:^5.0f} | R${valortotalproduto[c]:^9.2f}|')
     valordacompra = (valordacompra + valortotalproduto[c])
 print('')
 print(f'O valor da sua compra é de R${valordacompra:.2f}')
